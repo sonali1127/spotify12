@@ -94,7 +94,7 @@ async function displayAlbums() {
 }
 
 async function getSongs(folder) {
-    let response = await fetch(`http://127.0.0.1:3000/${folder}/`);
+    let response = await fetch(`/${folder}/`);
     let text = await response.text();
     let div = document.createElement("div");
     div.innerHTML = text;
